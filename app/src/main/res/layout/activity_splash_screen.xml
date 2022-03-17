@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashScreen">
+
+    <ImageView
+        android:id="@+id/plogo"
+        android:layout_width="299dp"
+        android:layout_height="86dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pushin_p"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641"
+        app:srcCompat="@drawable/pushin_p">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/plogo_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/plogo"
+        app:layout_constraintEnd_toEndOf="@+id/plogo"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/plogo"
+        app:layout_constraintTop_toTopOf="@+id/plogo"
+        app:layout_constraintVertical_bias="0.467"
+        app:srcCompat="@drawable/_3048_negative_squared_latin_capital_letter_p" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="195dp"
+        android:layout_height="109dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/p_image1"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="280dp"
+        android:rotation="21"
+        android:rotationX="-37"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/_3048_negative_squared_latin_capital_letter_p" />
+
+    <ImageView
+        android:id="@+id/p_image2"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="290dp"
+        android:rotation="17"
+        android:rotationX="-12"
+        android:rotationY="-17"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/_3048_negative_squared_latin_capital_letter_p" />
+
+    <ImageView
+        android:id="@+id/p_image3"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="740dp"
+        android:rotation="-17"
+        android:rotationX="41"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/_3048_negative_squared_latin_capital_letter_p" />
+
+    <ImageView
+        android:id="@+id/p_image4"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="290dp"
+        android:adjustViewBounds="false"
+        android:rotation="-21"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/_3048_negative_squared_latin_capital_letter_p" />
+
+    <ImageView
+        android:id="@+id/p_image5"
+        android:layout_width="51dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="740dp"
+        android:rotation="25"
+        android:rotationX="37"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/_3048_negative_squared_latin_capital_letter_p" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

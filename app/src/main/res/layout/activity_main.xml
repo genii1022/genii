@@ -33,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_outline_add_24"
-        app:layout_anchor="@id/bottomAppBar" />
+        app:layout_anchor="@id/bottomAppBar"
+        app:backgroundTint="@color/mid_gray"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

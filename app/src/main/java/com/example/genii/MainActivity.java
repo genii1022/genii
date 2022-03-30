@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
          BottomNavigationView navView = findViewById(R.id.bottomNavigationView);
-         navView.getMenu().getItem(1).setEnabled(false);
+         navView.getMenu().findItem(R.id.placeholder).setEnabled(false);
     }
 }

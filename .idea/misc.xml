@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/navigation_bar/app/src/main/res/drawable/backarrow.xml" value="0.258" />
-        <entry key="..\:/Users/Kevin/AndroidStudioProjects/navigation_bar/app/src/main/res/layout/activity_create_card.xml" value="0.25" />
+        <entry key="..\:/Users/Kevin/AndroidStudioProjects/navigation_bar/app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.296" />
+        <entry key="..\:/Users/Kevin/AndroidStudioProjects/navigation_bar/app/src/main/res/layout/activity_create_card.xml" value="0.33" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/navigation_bar/app/src/main/res/layout/activity_help_screen.xml" value="0.33" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/navigation_bar/app/src/main/res/layout/activity_home.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/Kevin/AndroidStudioProjects/navigation_bar/app/src/main/res/layout/activity_main.xml" value="0.33" />

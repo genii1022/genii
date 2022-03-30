@@ -35,12 +35,111 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="CREATE"
-        android:textSize="50dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="Create Card"
+        android:textSize="34sp"
+        android:textColor="#57000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/QuestionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="Question:"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/AnswerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="Answer:"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AnswerInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerTitle"
+        app:counterEnabled="true"
+        app:endIconMode="clear_text"
+        app:counterMaxLength="100"
+        app:layout_constraintVertical_bias="0.052">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AnswerInput"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Ex: Deez Nuts"
+            app:endIconMode="clear_text"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textAlignment="viewStart"
+            android:textColor="#80000000"
+            android:maxLength="100"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/QuestionInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:endIconMode="clear_text"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionTitle"
+        app:layout_constraintVertical_bias="0.015">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/QuestionInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ex: Whats D.N.?"
+            android:maxLength="25"
+            android:inputType="textLongMessage"
+            android:textColor="#80000000"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <ImageButton
         android:id="@+id/goBack"
@@ -53,5 +152,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/backarrow" />
+
+    <Button
+        android:id="@+id/Create_Button"
+        android:layout_width="165dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#8FC692"
+        android:text="Create"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

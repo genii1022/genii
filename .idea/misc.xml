@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/drawable/ic_genii_launch.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/activity_main.xml" value="0.2848731884057971" />
+        <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/activity_splash_screen.xml" value="0.2203125" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/fragment_add.xml" value="0.2203125" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/fragment_home.xml" value="0.2203125" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/fragment_start.xml" value="0.2203125" />

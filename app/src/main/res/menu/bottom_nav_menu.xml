@@ -5,15 +5,9 @@
         android:title="HOME"
         android:icon="@drawable/ic_home" />
 
-    <item android:id="@+id/folder"
-        android:title="FOLDER"
-        android:icon="@drawable/ic_folder" />
-
     <item android:id="@+id/play"
         android:title="PLAY"
         android:icon="@drawable/ic_playarrow" />
 
-    <item android:id="@+id/blitz"
-        android:title="BLITZ"
-        android:icon="@drawable/ic_bolt" />
+
 </menu>

@@ -12,7 +12,7 @@
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:background="#CDCDCD"
+        android:background="#12000000"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
@@ -37,10 +37,11 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="4dp"
-            android:backgroundTint="#00F3EBEB"
+            android:background="#12000000"
+            android:backgroundTint="#ADFFFFFF"
             android:src="@drawable/help_icon"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintHorizontal_bias="0.984"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

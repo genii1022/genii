@@ -56,17 +56,10 @@ public class MainActivity extends AppCompatActivity { //navigation bar code
                         fragment = new HomeFragment();
                         break;
 
-                    case R.id.folder:
-                        fragment = new FolderFragment();
-                        break;
-
                     case R.id.play:
                         fragment = new PlayFragment();
                         break;
 
-                    case R.id.blitz:
-                        fragment = new BlitzFragment();
-                        break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
 

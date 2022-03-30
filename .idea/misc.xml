@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/activity_main.xml" value="0.2848731884057971" />
+        <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/fragment_add.xml" value="0.2203125" />
+        <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/fragment_home.xml" value="0.2203125" />
+        <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/fragment_start.xml" value="0.2203125" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/toolbar.xml" value="0.29981884057971014" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
       </map>

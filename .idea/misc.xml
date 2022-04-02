@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/drawable/text_border.xml" value="0.3828125" />
-        <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/activity_main.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/card_layout.xml" value="0.33" />
         <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/fragment_add.xml" value="0.33" />
         <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/fragment_start.xml" value="0.2" />
+        <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/game_layout.xml" value="0.33" />
+        <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/game_toolbar.xml" value="0.5" />
         <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/layout/toolbar.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/aliis/Desktop/genii - project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/drawable/ic_genii_launch.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/activity_main.xml" value="0.2848731884057971" />
         <entry key="..\:/Users/aliis/Desktop/genii/app/src/main/res/layout/activity_splash_screen.xml" value="0.2203125" />

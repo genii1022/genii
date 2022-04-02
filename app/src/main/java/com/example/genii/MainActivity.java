@@ -36,7 +36,14 @@ public class MainActivity extends AppCompatActivity {
         fabButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new AddFragment()).commit();
+                if (navView.getSelectedItemId() == R.id.placeholder) {
+                    // TODO: store in db
+                    navView.setSelectedItemId(R.id.miHome);
+                    return;
+                }
+
                 navView.setSelectedItemId(R.id.placeholder);
+                fabButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_outline_check_24));
                 fabButton.getDrawable().setTint(getResources().getColor(R.color.peach));
             }
         });
@@ -56,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, selectedFragment).commit();
                     FloatingActionButton fabButton = (FloatingActionButton) findViewById(R.id.fab);
+                    fabButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_outline_add_24));
                     fabButton.getDrawable().setTint(getResources().getColor(R.color.black));
                     return true;
                 }

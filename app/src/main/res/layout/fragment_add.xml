@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_createCardTitle" />
 
     <EditText
-        android:id="@+id/pt_questionInput"
+        android:id="@+id/et_questionInput"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -54,10 +54,10 @@
         android:text="Answer:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_questionInput" />
+        app:layout_constraintTop_toBottomOf="@+id/et_questionInput" />
 
     <EditText
-        android:id="@+id/pt_answerInput"
+        android:id="@+id/et_answerInput"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -73,5 +73,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_answerLabel" />
+
+    <TextView
+        android:id="@+id/tv_errorMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="200dp"
+        android:text="ERROR: Please make sure your question and answer each contain at least 5 letters."
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

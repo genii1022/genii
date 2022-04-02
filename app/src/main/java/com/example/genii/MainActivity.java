@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -37,7 +38,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new AddFragment()).commit();
                 if (navView.getSelectedItemId() == R.id.placeholder) {
-                    // TODO: store in db
+                    EditText questionEl = (EditText)findViewById(R.id.et_questionInput);
+                    String question = questionEl.getText().toString();
+
+                    EditText answerEl = (EditText)findViewById(R.id.et_answerInput);
+                    String answer = answerEl.getText().toString();
+
+                    CardModel card = new CardModel(-1, question, answer);
+
+                    DataBaseHelper dataBaseHelper = new DataBaseHelper(MainActivity.this);
+
+                    dataBaseHelper.addCard(card);
+
                     navView.setSelectedItemId(R.id.miHome);
                     return;
                 }

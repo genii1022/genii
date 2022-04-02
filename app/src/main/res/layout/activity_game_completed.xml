@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameCompleted">
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="#12000000"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#0000"
+            android:backgroundTint="#ADFFFFFF"
+            android:src="@drawable/ic_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/congrats"
+            android:layout_width="426dp"
+            android:layout_height="84dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.177"
+            app:srcCompat="@drawable/ic_congrats" />
+
+        <ImageView
+            android:id="@+id/emoji"
+            android:layout_width="528dp"
+            android:layout_height="240dp"
+            app:layout_constraintBottom_toTopOf="@+id/playAgain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/congrats"
+            app:layout_constraintVertical_bias="0.447"
+            app:srcCompat="@drawable/ic_emoji" />
+
+        <ImageButton
+            android:id="@+id/playAgain"
+            android:layout_width="426dp"
+            android:layout_height="84dp"
+            android:background="#0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.842"
+            app:srcCompat="@drawable/ic_playagain" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02"
+            app:srcCompat="@drawable/logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

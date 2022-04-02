@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Genii</string>
+    <string name="app_name">genii</string>
+    <string name="tapCard">Tap on card to view answer</string>
+    <string name="placeholder">Text</string>
 </resources>

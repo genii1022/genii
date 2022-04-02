@@ -53,6 +53,11 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<HomeRecyclerVi
         return cards.size();
     }
 
+    public void filterList(ArrayList<CardModel> filteredList) {
+        cards = filteredList;
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView mainText;
         TextView hintText;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/pt_searchBar"
+        android:id="@+id/et_searchBar"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -32,6 +32,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt_searchBar"
+        app:layout_constraintTop_toBottomOf="@+id/et_searchBar"
         android:overScrollMode="never"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

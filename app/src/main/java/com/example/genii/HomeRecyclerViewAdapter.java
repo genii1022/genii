@@ -38,10 +38,10 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<HomeRecyclerVi
             public void onClick(View view) {
                 if (holder.mainText.getText() == cards.get(holder.getAdapterPosition()).getQuestion()) {
                     holder.mainText.setText(cards.get(holder.getAdapterPosition()).getAnswer());
-                    holder.hintText.setText("Click anywhere on the card to show the answer");
+                    holder.hintText.setText("Click anywhere on the card to show the question");
                 } else {
                     holder.mainText.setText(cards.get(holder.getAdapterPosition()).getQuestion());
-                    holder.hintText.setText("Click anywhere on the card to show the question");
+                    holder.hintText.setText("Click anywhere on the card to show the answer");
                 }
 
             }

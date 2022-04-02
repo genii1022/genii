@@ -11,7 +11,7 @@
 
     <include
         android:id="@+id/game_card"
-        layout="@layout/card_layout"
+        layout="@layout/card_layout_large"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

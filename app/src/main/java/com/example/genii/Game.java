@@ -47,10 +47,10 @@ public class Game extends AppCompatActivity {
             public void onClick(View view) {
                 if (mainTxt.getText() == cards.get(index).getQuestion()) {
                     mainTxt.setText(cards.get(index).getAnswer());
-                    tip.setText("Click anywhere on the card to show the answer");
+                    tip.setText("Click anywhere on the card to show the question");
                 } else {
                     mainTxt.setText(cards.get(index).getQuestion());
-                    tip.setText("Click anywhere on the card to show the question");
+                    tip.setText("Click anywhere on the card to show the answer");
                 }
             }
         });
@@ -58,7 +58,7 @@ public class Game extends AppCompatActivity {
         findViewById(R.id.btn_next).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (index >= cards.size()) {
+                if (index >= (cards.size()-1)) {
                     findViewById(R.id.btn_home).callOnClick();
                     return;
                 }

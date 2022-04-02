@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -36,13 +37,18 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fabButton = (FloatingActionButton) findViewById(R.id.fab);
         fabButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new AddFragment()).commit();
                 if (navView.getSelectedItemId() == R.id.placeholder) {
                     EditText questionEl = (EditText)findViewById(R.id.et_questionInput);
                     String question = questionEl.getText().toString();
 
                     EditText answerEl = (EditText)findViewById(R.id.et_answerInput);
                     String answer = answerEl.getText().toString();
+
+                    if (question.length() < 5 || answer.length() < 5) {
+                        TextView err =  (TextView) findViewById(R.id.tv_errorMessage);
+                        err.setVisibility(View.VISIBLE);
+                        return;
+                    }
 
                     CardModel card = new CardModel(-1, question, answer);
 
@@ -53,10 +59,12 @@ public class MainActivity extends AppCompatActivity {
                     navView.setSelectedItemId(R.id.miHome);
                     return;
                 }
-
-                navView.setSelectedItemId(R.id.placeholder);
-                fabButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_outline_check_24));
-                fabButton.getDrawable().setTint(getResources().getColor(R.color.peach));
+                else {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new AddFragment()).commit();
+                    navView.setSelectedItemId(R.id.placeholder);
+                    fabButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_outline_check_24));
+                    fabButton.getDrawable().setTint(getResources().getColor(R.color.peach));
+                }
             }
         });
     }

@@ -8,6 +8,8 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.HashMap;
+
 public class splashScreen extends AppCompatActivity {
 
     View p1,p2,p3,p4,p5,p6,p7,p8;
@@ -42,6 +44,7 @@ public class splashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+
 
                 Intent intent=new Intent(splashScreen.this, MainActivity.class);
                 startActivity(intent);

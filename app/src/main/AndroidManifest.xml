@@ -13,6 +13,9 @@
             android:name=".MainActivity"
             android:exported="true"/>
         <activity
+            android:name=".GamePlay"
+            android:exported="true"/>
+        <activity
             android:name=".HelpScreen"
             android:exported="true"/>
         <activity
